@@ -42,7 +42,7 @@ function draw() {
   brick2.display();
   brick3.display();
   ball.display();
-keyPressed();
+
   
   drawSprites();
  
@@ -52,8 +52,8 @@ function keyPressed()
   {
     if(keyCode===UP_ARROW)
     {
-      Matter.Body.applyForce(ball.body,ball.body.position,{x:800,y:320});
-      isStatis:true
+      Matter.Body.applyForce(ball.body,ball.body.position,{x:75,y:-75});
+      
     }
   }
 
